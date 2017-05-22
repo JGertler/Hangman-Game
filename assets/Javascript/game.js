@@ -1,4 +1,7 @@
+
+
 window.onload = function () {
+
 
   var alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h',
         'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's',
@@ -6,7 +9,6 @@ window.onload = function () {
   
   var categories;         // Array of topics
   var chosenCategory;     // Selected category
-  var getHint ;          // Word getHint
   var word ;              // Selected word
   var guess ;             // Geuss
   var geusses = [ ];      // Stored geusses
@@ -17,7 +19,6 @@ window.onload = function () {
   // Get elements
   var showLives = document.getElementById("mylives");
   var showCategory = document.getElementById("scategory");
-  var getHint = document.getElementById("hint");
 
 
   // create alphabet ul
@@ -40,11 +41,11 @@ window.onload = function () {
   // Select Category
   var selectCat = function () {
     if (chosenCategory === categories[0]) {
-      categoryName.innerHTML = "A General Feeling I Get in Class!";
+      categoryName.innerHTML = "hint: A General Feeling I Get From Not Understanding Things!";
     } else if (chosenCategory === categories[1]) {
-      categoryName.innerHTML = "A food that eases raging hormones!";
+      categoryName.innerHTML = "hint: A food that eases raging hormones!";
     } else if (chosenCategory === categories[2]) {
-      categoryName.innerHTML = "What I need!";
+      categoryName.innerHTML = "hint: What I need right now!";
     }
   }
 
@@ -83,11 +84,7 @@ window.onload = function () {
     }
   }
 
-      // Animate man
-  var animate = function () {
-    var drawMe = lives ;
-    drawArray[drawMe]();
-  }
+
 
   
    // Hangman
@@ -108,50 +105,7 @@ window.onload = function () {
       context.stroke();
     }
     
-  draw = function($pathFromx, $pathFromy, $pathTox, $pathToy) {
-    
-    context.moveTo($pathFromx, $pathFromy);
-    context.lineTo($pathTox, $pathToy);
-    context.stroke(); 
-}
 
-   frame1 = function() {
-     draw (0, 150, 150, 150);
-   };
-   
-   frame2 = function() {
-     draw (10, 0, 10, 600);
-   };
-  
-   frame3 = function() {
-     draw (0, 5, 70, 5);
-   };
-  
-   frame4 = function() {
-     draw (60, 5, 60, 15);
-   };
-  
-   torso = function() {
-     draw (60, 36, 60, 70);
-   };
-  
-   rightArm = function() {
-     draw (60, 46, 100, 50);
-   };
-  
-   leftArm = function() {
-     draw (60, 46, 20, 50);
-   };
-  
-   rightLeg = function() {
-     draw (60, 70, 100, 100);
-   };
-  
-   leftLeg = function() {
-     draw (60, 70, 20, 100);
-   };
-  
-  drawArray = [rightLeg, leftLeg, rightArm, leftArm,  torso,  head, frame4, frame3, frame2, frame1]; 
 
 
   // OnClick Function
@@ -193,7 +147,7 @@ window.onload = function () {
     buttons();
 
     geusses = [ ];
-    lives = 10;
+    lives = 5;
     counter = 0;
     space = 0;
     result();
@@ -213,7 +167,7 @@ window.onload = function () {
     context.clearRect(0, 0, 400, 400);
     play();
   }
+
+
 }
-
-
 

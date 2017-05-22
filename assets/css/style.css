@@ -1,56 +1,56 @@
 h1, h2 {
-	text-align: center;
-	font-family: 'Indie Flower', cursive;
+  text-align: center;
+  font-family: 'Indie Flower', cursive;
 }
 
 .title {
-	font-weight: bold;
+  font-weight: bold;
 }
 
-img.volde {
-	width: 65px;
-	height: auto;
-	position: relative;
-	right: 90px;
-	bottom: 55px;
-	z-index: 1;
+img.head {
+  width: 65px;
+  height: auto;
+  position: relative;
+  right: 90px;
+  bottom: 55px;
+  z-index: 1;
 
 
 }
 
 img.hanger {
-	position: relative;
-	margin-left: 40%;
-	z-index: 0;
+  position: relative;
+  margin-left: 40%;
+  z-index: 0;
 }
 
 img.torso {
-	position: relative;
-	top: 20px;
-	right: 130px;
+  position: relative;
+  top: 20px;
+  right: 130px;
 
 }
 
-img.right-arm, img.left-arm {
-	width: 50px; 
-	position: relative;
-	top: 0px;
-	right: 135px;
-	z-index: 1;
-	
+img.rightArm, img.leftArm {
+  width: 50px; 
+  position: relative;
+  top: 0px;
+  right: 135px;
+  z-index: 1;
+  
 }
 
-img.left-arm {
-	right: 275px;
-	width: 80px;
-	z-index: 0;
-	
+img.leftArm {
+  right: 275px;
+  width: 80px;
+  z-index: 0;
+  
 }
 
 img.legs {
-	position: relative;
-	top: 140px;
-	right: 350px;
+  position: relative;
+  top: 140px;
+  right: 350px;
 }
 
 * {
@@ -142,14 +142,17 @@ canvas{
   padding:15px;
 }
 
+#categoryName {
+  margin: 0 30%;
 
+}
 
 h1 {
-	font-size: 2.6em;
+  font-size: 2.6em;
 }
 
 h2 {
-	font-size: 1.6em;
+  font-size: 1.6em;
 }
 
 p {
@@ -184,7 +187,7 @@ p {
     }
 }
 
-#my-word {
+ul #my-word {
   margin: 0;
   display: block;
   padding: 0;
